@@ -33,31 +33,3 @@
         </div>
     </body>
 </html>
-<?php
-    $utilisateurs = array(  array('Sadikh','Sadikh','Ababacar Sadikh GUEYE'),
-                            array('babacar','babacar','Aboubacar Camara'),
-                            array('bniass','baye','Baye Niass'),
-                        );
-    if( isset($_POST['submit'])) {
-        $login = htmlspecialchars($_POST['username']);
-        $mdp = htmlspecialchars($_POST['pwd']);
-        for($i=0;$i<count($utilisateurs);$i++){
-            if($utilisateurs[$i][0]==$login){
-                for($j=1;$j<count($utilisateurs[$i]);$j++){
-                    if($utilisateurs[$i][$j]==$mdp){
-                        header('location:accueil.php');
-                    }
-                    else{
-                        echo "<h1 style='text-align: center; background: red; width:45%;'>Identifiant Incorrecte";
-                        break;
-                    }
-                }
-            }
-            else{
-                echo "<h1 style='text-align: center; background: red; width:45%; margin: 0 auto; margin-top: -28.5%;'>Identifiant Incorrecte";
-                break;
-            }
-        }
-                
-    }
-?>
