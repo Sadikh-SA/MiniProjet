@@ -141,10 +141,43 @@
                                                 ";
                                 }
                                 else {
-                                    echo "<h1 style='background: #2E2E2E; color: #FFF; text-align: center; text-transform:uppercase;'>Ce Produit ".$_POST['nom']." n'existe pas dans la base</h1><br>";
-                                    break;
-                                                
+                                    $val++;
+                                    echo "  
+                                    <div class='col-sm-4'>
+                                    <div class='panel panel-primary'>
+                                    <div class='panel-heading' style='background:#2E2E2E;' ><h4 align='center' style='text-transform: uppercase;'>".$produit[$i][0]."</h4></div>
+                                    <div class='panel-body'><a href='#'><img src='".$images[$i]."'class='img-responsive' style='width:100%; height:200px;' style='height:20%' alt='Image'></a></div>
+                            ";        
+                                   if($produit[$i][2]<10){
+                                    
+                                        echo " <div class='panel-heading' style='background:red; height:60px;' id='pied'><h4>
+                                        <div id='gauche' style='float:left; width:30%;'>
+                                            <strong>Prix:".$produit[$i][1]."</strong>
+                                        </div>
+                                        <div id='droite' style='float:right; width:30%;'>
+                
+                                                <strong >quantité: ".$produit[$i][2]."</strong>
+                                        </div>";
+                                   }
+                                    else {
+                                        echo " <div class='panel-heading' style='background:#2E2E2E; height:60px;' id='pied'><h4>
+                                                <div id='gauche' style='float:left; width:30%;'>
+                                                    <strong>Prix:".$produit[$i][1]."</strong>
+                                                </div>
+                                                <div id='droite' style='float:right; width:31%;'>
+                        
+                                                        <strong >quantité: ".$produit[$i][2]."</strong>
+                                                </div>";
+                                            }
+                    echo "              
+                                    </h4></div>
+                                </div>
+                                            </div>
+                                        ";            
                                 }
+                            }
+                            if($val==count($produit)){
+                                echo "<h1 style='background: #2E2E2E; color: #FFF; text-align: center; text-transform:uppercase;'>Ce Produit ".$_POST['nom']." n'existe pas dans la base</h1><br>";
                             }
                         }
                         else{
