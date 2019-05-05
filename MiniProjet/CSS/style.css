@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+#contenu {
+  margin: 0 auto;
+  width: 50%;
+  background: #FFF;
+  border: 3px solid #2E2E2E;
+}
+
+input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+button {
+background-color: #2E2E2E;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
+button:hover {
+opacity: 0.8;
+}
+
+.cancelbtn {
+width: auto;
+padding: 10px 18px;
+background-color: #f44336;
+}
+
+.imgcontainer {
+text-align: center;
+margin: 24px 0 12px 0;
+
+}
+
+img.avatar {
+width: 40%;
+border-radius: 50%;
+}
+
+.container {
+padding: 16px;
+}
+
+span.psw {
+float: right;
+padding-top: 16px;
+}
+
+.search-sec{
+  padding: 2rem;
+}
+.search-slt{
+  display: block;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #55595c;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  height: calc(4rem + 6px) !important;
+  border-radius:0;
+}
+.wrn-btn{
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  height: calc(4rem + 6px) !important;
+  border-radius:0;
+  margin-top: 5px;
+}
+@media (min-width: 992px){
+  .search-sec{
+      position: relative;
+      top: -114px;
+      background: #2E2E2E;
+  }
+}
+
+@media (max-width: 992px){
+  .search-sec{
+      background: #2E2E2E;
+  }
+}
+
+/* Remove the navbar's default rounded borders and increase the bottom margin */ 
+.navbar {
+  margin-bottom: 50px;
+  border-radius: 0;
+  }
+  
+  /* Remove the jumbotron's default bottom margin */ 
+  .jumbotron {
+  margin-bottom: 0;
+  }
+
+  /* Add a gray background color and some padding to the footer */
+  footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+  }
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+span.psw {
+   display: block;
+   float: none;
+}
+.cancelbtn {
+   width: 100%;
+}
+}
