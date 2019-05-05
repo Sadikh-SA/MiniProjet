@@ -156,7 +156,12 @@
                                     <div id='droite' style='float:right; width:30%;'>
             
                                             <strong >montant: ".$produit[$i][2]."</strong>
-                                    </div>";
+                                    </div>
+                                    <div id='droite' style='float:right; width:80%;'>
+                    
+                                                    <strong >montant: ".$produit[$i][2]*$produit[$i][1]."</strong>
+                                            </div>
+                                    ";
                                }
                                 else {
                                     echo " <div class='panel-heading' style='background:#2E2E2E; height:60px;' id='pied'><h4>
