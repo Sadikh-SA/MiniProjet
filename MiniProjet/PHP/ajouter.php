@@ -1,3 +1,17 @@
+<?php
+            $produit = array(   
+                array('Hp Probook G5',450000,9),
+                array('Macbook',1600000,5),
+                array('Dell',300000, 15),
+                array('iphone6',160000,65),
+                array('iphone8',280000,70),
+                array('GalaxieS8',380000,25),
+                array('J7pro',180000,68),
+                array('Tablette',130000,80),
+                array('Ordinateur Bureau',200000,8)
+            );
+            $images = array('../Images/hpg5.jpg','../Images/mac.jpg','../Images/dell.jpg','../Images/ip6.jpg','../Images/ip8.png','../Images/s8.jpg','../Images/j7.jpg','../Images/tab.jpg','../Images/buro.jpg');
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
