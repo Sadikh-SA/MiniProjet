@@ -7,7 +7,7 @@
     </head>
     <body style="background: #2E2E2E;">
         <div id="contenu" style="border:3px solid #FFF; z-index:1;">
-            <form action="index.php" method="post">
+            <form action="traitement.php" method="post">
                 <div class="imgcontainer">
                     <img src="../Images/avatar.jpeg" alt="Avatar" class="avatar">
                 </div>
