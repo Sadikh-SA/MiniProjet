@@ -41,7 +41,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>                        
                         </button>
-                        <a class="navbar-brand" href="#">MiniProjet</a>
+                        <a class="navbar-brand" href="miniprojet.php">MiniProjet</a>
                     </div>  
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
@@ -110,32 +110,52 @@
                             echo "<div class='row' style=''>";
                         }
                             echo "  
-                                        <div class='col-sm-4'>
-                                            <div class='panel panel-primary'>
-                                            <div class='panel-heading' style='background:#2E2E2E;' ><h4 align='center' style='text-transform: uppercase;'>".$produit[$i][0]."</h4></div>
-                                            <div class='panel-body'><a href='#'><img src='".$images[$i]."'class='img-responsive' style='width:100%; height:200px;' style='height:20%' alt='Image'></a></div>
-                                            <div class='panel-heading' style='background:#2E2E2E; height:60px;' id='pied'><h4>
-                                                <div id='gauche' style='float:left; width:30%;'>
-                                                    <strong>Prix:".$produit[$i][1]."</strong>
+                            <div class='col-sm-4'>
+                            <div class='panel panel-primary'>
+                            <div class='panel-heading' style='background:#2E2E2E;' ><h4 align='center' style='text-transform: uppercase;'>".$produit[$i][0]."</h4></div>
+                            <div class='panel-body'><a href='#'><img src='".$images[$i]."'class='img-responsive' style='width:100%; height:200px;' style='height:20%' alt='Image'></a></div>
+                    ";        
+                           if($produit[$i][2]<10){
+                            
+                                echo " <div class='panel-heading' style='background:red; height:60px;' id='pied'><h4>
+                                <div id='gauche' style='float:left; width:30%;'>
+                                    <strong>Prix:".$produit[$i][1]."</strong>
+                                </div>
+                                <div id='droite' style='float:right; width:30%;'>
+        
+                                        <strong >quantité: ".$produit[$i][2]."</strong>
+                                </div>
+                                <div id='droite' style='float:right; width:80%;'>
+                    
+                                                    <strong >montant: ".$produit[$i][2]*$produit[$i][1]."</strong>
                                                 </div>
-                                                <div id='droite' style='float:right; width:30%;'>
-                            ";
-                                                    if($produit[$i][2]<10) {
-                                                        echo "<strong style='color:red'>quantité: ".$produit[$i][2]."</strong>";
-                                                    }
-                                                    else {
-                                                        echo "<strong>quantité:".$produit[$i][2]."</strong>";
-                                                    }
-                            echo "              </div>
-                                            </h4></div>
-                                        </div>   
+                                ";
+                           }
+                            else {
+                                echo " <div class='panel-heading' style='background:#2E2E2E; height:60px;' id='pied'><h4>
+                                        <div id='gauche' style='float:left; width:30%;'>
+                                            <strong>Prix:".$produit[$i][1]."</strong>
+                                        </div>
+                                        <div id='droite' style='float:right; width:31%;'>
+                
+                                                <strong >quantité: ".$produit[$i][2]."</strong>
+                                        </div>
+                                        <div id='droite' style='float:right; width:80%;'>
+                    
+                                                    <strong >montant: ".$produit[$i][2]*$produit[$i][1]."</strong>
+                                                </div>
+                                        ";
+                                    }
+            echo "              
+                            </h4></div>
+                        </div>
                                     </div>
                                 ";
                                 }
                             }
                         }    
                     ?>
-        
+        </div>
         <footer class="container-fluid text-center" style="background:#2E2E2E; height:100px;">
                 <p style="color: #FFF">Ababacar Sadikh GUEYE & Aboubacar CAMARA Copyright</p>  
                 <form class="form-inline" style="color:#FFF;" >Get deals:
