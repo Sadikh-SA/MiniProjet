@@ -10,7 +10,7 @@
                 array('Tablette',130000,80),
                 array('Ordinateur Bureau',200000,8)
             );
-            $images = array('../Images/hpg5.jpg','../Images/mac.jpg','../Images/dell.jpg','../Images/ip6.jpg','../Images/ip8.png','../Images/s8.jpg','../Images/j7.jpg','../Images/tab.jpg','../Images/buro.jpg');
+            $images = array('../Images/hpg5.jpg','../Images/mac.jpg','../Images/dell.jpg','../Images/ip6.jpg','../Images/ip8.png','../Images/s8.jpg','../Images/j7.jpg','../Images/tab.jpg','../Images/buro.jpg');            
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +27,7 @@
     <body>
         <div class="container">
             <div class="jumbotron">
-                <div class="container text-center" id="diapo" >
+                <div class="container text-center" id="diapo">
                     <img src="<?php echo $images[1]; ?>">
                     <img src="<?php echo $images[4]; ?>">
                     <img src="<?php echo $images[8]; ?>">
@@ -41,7 +41,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>                        
                         </button>
-                        <a class="navbar-brand" href="#">MiniProjet</a>
+                        <a class="navbar-brand" href="miniprojet.php">MiniProjet</a>
                     </div>  
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
@@ -155,7 +155,7 @@
                                     </div>
                                     <div id='droite' style='float:right; width:30%;'>
             
-                                            <strong >quantité: ".$produit[$i][2]."</strong>
+                                            <strong >montant: ".$produit[$i][2]."</strong>
                                     </div>";
                                }
                                 else {
@@ -166,7 +166,12 @@
                                             <div id='droite' style='float:right; width:31%;'>
                     
                                                     <strong >quantité: ".$produit[$i][2]."</strong>
-                                            </div>";
+                                            </div>
+                                            <div id='droite' style='float:right; width:80%;'>
+                    
+                                                    <strong >montant: ".$produit[$i][2]*$produit[$i][1]."</strong>
+                                            </div>"
+                                            ;
                                         }
                             echo "              
                                             </h4></div>
