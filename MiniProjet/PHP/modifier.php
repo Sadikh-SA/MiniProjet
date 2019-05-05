@@ -74,7 +74,7 @@
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="pwd">Quantité du Produit</label>
                         <div class="col-sm-10">          
-                            <input type="number" class="form-control" id="3" placeholder="Enter Prix du Produit" name="quantité" max="100" required>
+                            <input type="number" class="form-control" id="3" placeholder="Enter Prix du Produit" name="quantité" min="0" max="100" required>
                         </div>
                     </div>
                     <div class="form-group" >
