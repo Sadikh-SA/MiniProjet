@@ -41,7 +41,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>                        
                         </button>
-                        <a class="navbar-brand" href="#">MiniProjet</a>
+                        <a class="navbar-brand" href="miniprojet.php">MiniProjet</a>
                     </div>  
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
@@ -122,7 +122,12 @@
                                             <div id='droite' style='float:right; width:30%;'>
                     
                                                     <strong >quantité: ".$_POST['quantité']."</strong>
-                                            </div>";
+                                            </div>
+                                            <div id='droite' style='float:right; width:80%;'>
+                    
+                                                        <strong >montant: ".$_POST['quantité']*$_POST['prix']."</strong>
+                                                    </div>
+                                            ";
                                        }
                                         else {
                                             echo " <div class='panel-heading' style='background:#2E2E2E; height:60px;' id='pied'><h4>
@@ -132,7 +137,12 @@
                                                     <div id='droite' style='float:right; width:31%;'>
                             
                                                             <strong >quantité: ".$_POST['quantité']."</strong>
-                                                    </div>";
+                                                    </div>
+                                                    <div id='droite' style='float:right; width:80%;'>
+                    
+                                                        <strong >montant: ".$_POST['quantité']*$_POST['prix']."</strong>
+                                                    </div>
+                                                    ";
                                                 }
                         echo "              
                                         </h4></div>
@@ -157,7 +167,12 @@
                                         <div id='droite' style='float:right; width:30%;'>
                 
                                                 <strong >quantité: ".$produit[$i][2]."</strong>
-                                        </div>";
+                                        </div>
+                                        <div id='droite' style='float:right; width:80%;'>
+                    
+                                                    <strong >montant: ".$produit[$i][2]*$produit[$i][1]."</strong>
+                                            </div>
+                                        ";
                                    }
                                     else {
                                         echo " <div class='panel-heading' style='background:#2E2E2E; height:60px;' id='pied'><h4>
@@ -167,7 +182,12 @@
                                                 <div id='droite' style='float:right; width:31%;'>
                         
                                                         <strong >quantité: ".$produit[$i][2]."</strong>
-                                                </div>";
+                                                </div>
+                                                <div id='droite' style='float:right; width:80%;'>
+                    
+                                                    <strong >montant: ".$produit[$i][2]*$produit[$i][1]."</strong>
+                                                </div>
+                                                ";
                                             }
                     echo "              
                                     </h4></div>
@@ -200,7 +220,12 @@
                                         <div id='droite' style='float:right; width:30%;'>
                 
                                                 <strong >quantité: ".$produit[$i][2]."</strong>
-                                        </div>";
+                                        </div>
+                                        <div id='droite' style='float:right; width:80%;'>
+                    
+                                                    <strong >montant: ".$produit[$i][2]*$produit[$i][1]."</strong>
+                                            </div>
+                                        ";
                                    }
                                     else {
                                         echo " <div class='panel-heading' style='background:#2E2E2E; height:60px;' id='pied'><h4>
@@ -210,7 +235,12 @@
                                                 <div id='droite' style='float:right; width:31%;'>
                         
                                                         <strong >quantité: ".$produit[$i][2]."</strong>
-                                                </div>";
+                                                </div>
+                                                <div id='droite' style='float:right; width:80%;'>
+                    
+                                                    <strong >montant: ".$produit[$i][2]*$produit[$i][1]."</strong>
+                                                </div>
+                                                ";
                                             }
                     echo "              
                                     </h4></div>
