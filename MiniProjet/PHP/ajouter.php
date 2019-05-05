@@ -27,8 +27,10 @@
     <body>
         <div class="container">
             <div class="jumbotron">
-                <div class="container text-center" >
-                    <img src="" width="25%">
+                <div class="container text-center" id="diapo" >
+                    <img src="<?php echo $images[1]; ?>">
+                    <img src="<?php echo $images[4]; ?>">
+                    <img src="<?php echo $images[8]; ?>">
                 </div>
             </div>
             <nav class="navbar navbar-inverse">
