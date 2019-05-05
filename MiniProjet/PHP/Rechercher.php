@@ -73,7 +73,7 @@
                                         <input type="text" class="form-control search-slt" placeholder="Par Prix Max " name="max" min="50000">
                                     </div>
                                     <div class="col-lg-2 col-md-2 col-sm-12 p-0">
-                                        <input type="text" class="form-control search-slt" placeholder="Par Quantité " name="quantité">
+                                        <input type="text" class="form-control search-slt" placeholder="Par Quantité " name="quantité" min="0">
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12 p-0">
                                         <button type="submit" class="btn btn-danger wrn-btn" name="submit">Search</button>
