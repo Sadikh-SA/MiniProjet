@@ -13,12 +13,14 @@
                         header('location:accueil.php');
                     }
                     else{
-                        ?><script type="text/javascript">alert("Identifiant incorrecte"); window.location = "index.php";</script><?php
+                       echo "Identifiant Incorrecte";
+                        header('location: index.php');
                     }
                 }
             }
             else{
-                ?><script type="text/javascript">alert("Identifiant incorrecte"); window.location = "index.php";</script><?php
+                echo "Identifiant Incorrecte";
+                header('location: index.php');
             }
         }
                 
