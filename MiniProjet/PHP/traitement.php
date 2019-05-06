@@ -14,13 +14,11 @@
                     }
                     else{
                        echo "Identifiant Incorrecte";
-                        break;
                     }
                 }
             }
             else{
                 echo "Identifiant Incorrecte";
-                break;
             }
         }
                 
