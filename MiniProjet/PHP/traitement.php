@@ -14,13 +14,13 @@
                     }
                     else{
                        echo "Identifiant Incorrecte";
-                        header('location: index.php');
+                        break;
                     }
                 }
             }
             else{
                 echo "Identifiant Incorrecte";
-                header('location: index.php');
+                break;
             }
         }
                 
